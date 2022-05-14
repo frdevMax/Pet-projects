@@ -1,0 +1,53 @@
+h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.review {
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    background-color: rgba(255, 255, 255, 0.4); 
+}
+
+.review-user {
+    box-sizing: border-box;
+    border-right: 1px solid black;
+    align-items: center;
+    margin: 0;
+}
+
+.review img {
+    width: 50%;
+    padding: 0.5rem;
+
+}
+
+.review p {
+    margin: 0;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.review-text {
+    box-sizing: border-box;
+    border-right: 1px solid black;
+    padding: 0.5rem;
+}
+
+.text {
+ padding-bottom: 1rem;
+}
+
+.date-time {
+    text-align: right;
+}
+
+.rating {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+

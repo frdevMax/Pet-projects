@@ -1,0 +1,42 @@
+.authorization {
+    padding: 1rem;
+    text-align:center;
+}
+
+.authorization div {
+    margin-bottom: 1rem;
+}
+
+.authorization input[type="email"],
+.authorization input[type="password"] {
+    border-style: none;
+    outline-style: none;
+    background: transparent;
+    color: #123c69;
+    font-size: 1.3rem;
+    border-bottom: 2px solid blue;
+    border-radius: 0;
+}
+
+
+.enter {
+    width: 200px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    background-color: blue;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: white;
+    outline-style: none;
+}
+
+.authorization input[type="email"]:focus,
+.authorization input[type="password"]:focus {
+    border-bottom: 2px solid green;
+}
+
+input::-webkit-input-placeholder {color: black;}
+input::-moz-placeholder {color: black;}
+
+input:focus::-webkit-input-placeholder {color: grey;}
+input:focus::-moz-placeholder {color:grey;}

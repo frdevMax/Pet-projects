@@ -1,0 +1,257 @@
+@import "flex-grid.css";
+@import "catalog.css";
+@import "reviews.css";
+@import "contacts.css";
+@import "login.css";
+@import "adaptability.css";
+
+html {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+        /*сетка*/
+body {
+    margin: 0;
+    display: grid;
+    grid-template:
+        "header header"
+        "left main"
+        "footer footer" 140px
+        /minmax(15%, 20%) 1fr;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none; 
+}
+
+header {grid-area: header;}
+aside {grid-area: left;}
+main {grid-area: main;}
+footer {grid-area: footer;}
+        /*конец*/
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    background: rgb(75,174,214);
+    background: linear-gradient(0deg, rgba(75,174,214,1) 0%, rgba(65,60,145,1) 100%);
+}
+
+aside {
+    background: rgb(114,114,115);
+    background: linear-gradient(90deg, rgba(114,114,115,1) 0%, rgba(220,241,227,1) 100%);
+}
+
+main {
+    background: url(../img/bg2.jpg);
+    background-size: cover;
+    background-color: rgb(177, 169, 59);
+}
+
+        /*Хэдер*/
+.header-bar {
+    justify-content: left;
+    align-items: center;
+    padding-right: 20px;
+}
+
+/*лого*/
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    box-sizing: border-box;
+}
+
+.logo img {
+    width: 40%; 
+}
+
+
+/*меню*/
+header ul {
+    margin: 0;
+    list-style-type: none;
+    font-size: 25px; 
+    padding-left: 0;  
+}
+
+.menu > li {
+    display: inline-block;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: white;
+}
+
+.submenu {
+    position: relative;
+    cursor: pointer;
+}
+
+.submenu > ul {
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    left: -0.7rem;
+    right: -0.7rem;
+    text-align: center;
+    background: rgb(67,61,150);
+    background: linear-gradient(0deg, rgba(67,61,150,1) 5%, rgba(75,174,214,1) 100%);
+    z-index: 1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.submenu:hover ul {
+    height: 95px;
+    transition: height 1s;
+}
+
+.menu {
+    padding: 0;
+    margin-right: auto;
+}
+
+/*поиск*/
+.search {
+    margin-left: auto;
+}
+
+header input[type="text"] {
+    border-style: none;
+    outline-style: none;
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding-left: 5px;
+}
+
+form > div {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+/*Эсайд*/
+.aside-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.banner {
+    width: 85%;
+    margin-top: 1rem;
+}
+
+/*Мэйн*/
+.main-container {
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.info h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.info p {
+    text-indent: 30px;
+}
+
+.new-title {
+    text-align: center;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.new-elem {
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    margin: 0.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.new-elem img {
+    width: 100%;
+}
+
+.new-elem p {
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0.3rem 0;
+}
+
+.new-elem:hover {
+    border: 1px solid black;
+    transition: border 1s;
+    background-color: rgba(255, 255, 255, 0.4); 
+}
+
+.new-elem a {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    top: 73%;
+    background-color:rgba(148, 7, 17, .5);
+    border: 0.5px solid transparent;
+    border-radius: 5px;
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    opacity: 0;
+}
+
+.new-elem:hover a {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+        /*Футер*/
+footer {
+    background: rgb(64,82,71);
+    background: radial-gradient(circle, rgba(64,82,71,1) 0%, rgba(2,19,5,1) 63%);
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.net img {
+    width: 30px;
+    height: 100%;
+    padding: 0.2rem;
+}
+
+/*кнопка наверх*/
+#top {
+    position: fixed;
+    right: 0;
+    bottom: 100px;
+    width: 50px;
+}
+
+.another {
+    align-items: center;
+}
+
+
+
+
+

@@ -1,0 +1,159 @@
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .elem {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .elem:hover {
+        background-color: rgba(255, 255, 255, 0.5); 
+    }
+
+    .review p {
+        font-size: 0.7rem;
+    }
+
+    .text {
+        font-size: 0.7rem;
+    }
+
+    .date-time {
+        font-size: 0.7rem;
+    }
+
+    .contacts {
+        flex-direction: column;
+    }
+}
+
+
+
+@media screen and (min-width: 540px) and (max-width: 767px) {
+    .review {
+        flex-direction: column;  
+    }
+
+    .review img {
+        width: 20%;
+    
+    }
+
+    .review-user {
+        border-right: 0;
+        border-bottom: 1px solid #000;
+    } 
+
+    .review-text {
+        padding: 0.5rem;
+        border-right: 0;
+        border-bottom: 1px solid #000;
+    }
+
+    .review p {
+        font-size: 0.7rem;
+    }
+
+    .text {
+        font-size: 0.7rem;
+    }
+
+    .date-time {
+        font-size: 0.7rem;
+    }
+
+    .rating p {
+        padding: 0.2rem;
+    }
+
+
+    /* НЕ РАБОТАЕТ */
+    .logo {
+        display: none;
+    }
+    
+    body {
+        display: grid;
+        grid-template: 
+            "header"
+            "main"
+            "footer";
+    }
+
+    header {grid-area: header;}
+    main {grid-area: main;}
+    footer {grid-area: footer;}
+}
+
+
+
+@media screen and (max-width: 539px) {
+    .new-elem {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .elem {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .elem:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .review {
+        flex-direction: column;  
+    }
+
+    .review img {
+        width: 20%;
+    
+    }
+
+    .review-user {
+        border-right: 0;
+        border-bottom: 1px solid #000;
+    } 
+
+    .review-text {
+        padding: 0.5rem;
+        border-right: 0;
+        border-bottom: 1px solid #000;
+    }
+
+    .review p {
+        font-size: 0.7rem;
+    }
+
+    .text {
+        font-size: 0.7rem;
+    }
+
+    .date-time {
+        font-size: 0.7rem;
+    }
+
+    .rating p {
+        padding: 0.2rem;
+    }
+
+    .contacts-text {
+        font-size: 0.7rem;
+    }
+
+
+    /* НЕ РАБОТАЕТ */
+    .logo {
+        display: none;
+    }
+
+    body {
+        display: grid;
+        grid-template: 
+            "header"
+            "main"
+            "footer";
+    }
+
+    header {grid-area: header;}
+    main {grid-area: main;}
+    footer {grid-area: footer;}
+    
+}
+
