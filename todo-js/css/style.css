@@ -1,0 +1,67 @@
+@import "flex-grid.css";
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: aqua;
+}
+
+h2 {
+    padding-left: 1rem;
+}
+
+.taskList {
+    background-color: white;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: solid 1px black;
+}
+
+.taskList.active {
+    background-color: orangered;
+}
+
+
+#task-list {
+    padding: 0 1rem;
+}
+
+#task-list h2 {
+    padding-left: 0;
+}
+
+.div-padding {
+    padding: 1rem;
+}
+
+#del-but {
+    padding-left: 1rem;
+}
+
+input, textarea, button {
+    background-color: white;
+    border-style: none;
+    outline-style: none;
+    width: 200px;
+    padding: 0.5rem;
+    border-bottom: solid 1px black;
+}
+
+#members button {
+    background-color: lightcoral;
+    border-style: none;
+    outline-style: none;
+    width: 30px;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.task-warn {
+    padding-left: 1rem;
+}
+
+
+
+
+
